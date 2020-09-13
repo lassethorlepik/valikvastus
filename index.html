@@ -1,0 +1,97 @@
+<html height="100%">
+	<title style= "font-family: 'Open Sans'; text-align: center;">
+        text
+	</title>
+    <head>
+		<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	</head>
+	<body height="100%">
+		<div id="suur">
+<div style='transform: scale(0.65); position: relative; top: -100px;'>
+  <br>
+  <h3 style="font-size:25px">Sul on tulemas raske eksam aines, mida sa väga hästi ei oska.
+Vastavalt sellele, missugune tunne sind valdab, saad leida sobiva lahenduse.</h3>
+  <p style="font-size:20px">Kliki valikul</p>
+  <hr />
+
+  <div id='block-11' style='padding: 10px;'>
+    <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
+      <input type='radio' name='option' value='1' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      A) Tunnen ärevust eksamiolukorra ees, kus pean suutma oma teadmisi näidata</label>
+    <span id='result-11'></span>
+  </div>
+  <hr />
+
+  <div id='block-12' style='padding: 10px;'>
+    <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
+      <input type='radio' name='option' value='2' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      B) Tunnen hirmu ebaõnnestumise ees, kardan, et ei saa hakkama</label>
+    <span id='result-12'></span>
+  </div>
+  <hr />
+
+  <div id='block-13' style='padding: 10px;'>
+    <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
+      <input type='radio' name='option' value='3' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+      C) Usun, et kukun nagunii läbi</label>
+    <span id='result-13'></span>
+  </div>
+  <hr />
+
+  <button type='button' onclick='displayAnswer1()' style='width: 120px; height: 50px; border-radius: 3px; background-color: #AB0132;color: white; font-weight: 700;font-size: 20px;'>Vali</button>
+<p id="v1">Vali üks variant...<br><br><br><br><p>
+</div>
+<a id='showanswer1'></a>
+		</div>
+</body>
+<style>
+#suur {
+outline: 2px dashed #AB0132;
+height:500px;
+}
+#v1 {
+font-size:30px;
+}
+body {
+    font-family: 'Open Sans';font-size: 18px;
+	background-color:white;
+}
+/*   */
+</style>
+<script>
+	  document.getElementById('block-11').style.border = '3px solid gray'
+	  document.getElementById('block-12').style.border = '3px solid gray'
+	  document.getElementById('block-13').style.border = '3px solid gray'
+//    The function evaluates the answer and displays result
+  function displayAnswer1() {
+    if (document.getElementById('option-11').checked) {
+      document.getElementById('block-11').style.border = '3px solid limegreen'
+      document.getElementById('result-11').style.color = 'limegreen'
+	  document.getElementById('block-12').style.border = '3px solid gray'
+	  document.getElementById('block-13').style.border = '3px solid gray'
+	  document.getElementById("v1").innerHTML = "Siis proovi…<br>* hingamisharjutusi rahunemiseks<br>*positiivset enesesisendust, ütle endale näiteks: &quot;Saan hakkama,&quot; või: &quot;Kõik läheb hästi.&quot;<br><br>";
+	  showCorrectAnswer1()
+    }
+    if (document.getElementById('option-12').checked) {
+      document.getElementById('block-12').style.border = '3px solid limegreen'
+      document.getElementById('result-12').style.color = 'limegreen'
+	  document.getElementById('block-11').style.border = '3px solid gray'
+	  document.getElementById('block-13').style.border = '3px solid gray'
+	  document.getElementById("v1").innerHTML = "Siis…<br>* mõtle, kas oled valmistunud ja õppinud ehk kas sul on põhjust arvata, et sa päriselt ei saa hakkama<br>* vaata üle oma suhtumine ebaõnnestumisse: kas ebaõnnestumine näitab nõrkust või on hoopis viisend edasi arendada ja uuesti proovida? Keegi ei ole täiuslik!";
+      showCorrectAnswer1()
+    }
+    if (document.getElementById('option-13').checked) {
+      document.getElementById('block-13').style.border = '3px solid limegreen'
+      document.getElementById('result-13').style.color = 'limegreen'
+	  document.getElementById('block-11').style.border = '3px solid gray'
+	  document.getElementById('block-12').style.border = '3px solid gray'
+	  document.getElementById("v1").innerHTML = "Siis…<br>* mõtle järele, kas tegu on fakti või arvamusega.<br>Kui oled õppinud, siis on see hinnang ja ei pruugi päriselt juhtuda. <br> Hoia faktid ja hinnangud lahus.<br>";
+      showCorrectAnswer1()
+    }
+  }
+  // the functon displays the answer
+  function showCorrectAnswer1() {
+
+  }
+</script>
+</html>
