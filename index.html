@@ -65,10 +65,16 @@ body {
 	  document.getElementById('block-11').style.border = '3px solid gray'
 	  document.getElementById('block-12').style.border = '3px solid gray'
 	  document.getElementById('block-13').style.border = '3px solid gray'
+	  document.getElementById('block-11').style.background = 'white'
+	  document.getElementById('block-12').style.background = 'white'
+	  document.getElementById('block-13').style.background = 'white'
 //    The function evaluates the answer and displays result
   function displayAnswer1() {
     if (document.getElementById('option-11').checked) {
-      document.getElementById('block-11').style.border = '3px solid limegreen'
+      document.getElementById('block-11').style.border = '3px solid #AB0132'
+	  document.getElementById('block-11').style.background = '#D59099'
+	  document.getElementById('block-12').style.background = 'white'
+	  document.getElementById('block-13').style.background = 'white'
       document.getElementById('result-11').style.color = 'limegreen'
 	  document.getElementById('block-12').style.border = '3px solid gray'
 	  document.getElementById('block-13').style.border = '3px solid gray'
@@ -76,7 +82,10 @@ body {
 	  showCorrectAnswer1()
     }
     if (document.getElementById('option-12').checked) {
-      document.getElementById('block-12').style.border = '3px solid limegreen'
+      document.getElementById('block-12').style.border = '3px solid #AB0132'
+	  document.getElementById('block-12').style.background = '#D59099'
+	  document.getElementById('block-11').style.background = 'white'
+	  document.getElementById('block-13').style.background = 'white'
       document.getElementById('result-12').style.color = 'limegreen'
 	  document.getElementById('block-11').style.border = '3px solid gray'
 	  document.getElementById('block-13').style.border = '3px solid gray'
@@ -84,7 +93,10 @@ body {
       showCorrectAnswer1()
     }
     if (document.getElementById('option-13').checked) {
-      document.getElementById('block-13').style.border = '3px solid limegreen'
+      document.getElementById('block-13').style.border = '3px solid #AB0132'
+	  document.getElementById('block-13').style.background = '#D59099'
+	  document.getElementById('block-11').style.background = 'white'
+	  document.getElementById('block-12').style.background = 'white'
       document.getElementById('result-13').style.color = 'limegreen'
 	  document.getElementById('block-11').style.border = '3px solid gray'
 	  document.getElementById('block-12').style.border = '3px solid gray'
